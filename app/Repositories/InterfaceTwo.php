@@ -2,11 +2,13 @@
 
 namespace App\Repositories;
 
+use App\Models\ContactModel;
+
 class InterfaceTwo implements TestInterface
 {
     public function AllDataList()
     {
-        return 123;
+        return ContactModel::get();
     }
 
     public function GetDetails($id)
