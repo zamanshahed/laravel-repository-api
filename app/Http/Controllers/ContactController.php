@@ -20,4 +20,9 @@ class ContactController extends Controller
         // $allContacts = ContactModel::get();
         return $allContacts;
     }
+
+    public function addData()
+    {
+        return 123;
+    }
 }

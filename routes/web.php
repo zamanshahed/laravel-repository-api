@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [App\Http\Controllers\ContactController::class, 'index'])->name('user.home');
+
+Route::get('/add', [App\Http\Controllers\ContactController::class, 'addData'])->name('user.add');
